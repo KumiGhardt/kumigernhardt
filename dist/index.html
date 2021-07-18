@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumi Gernhardt</title>
+    <link type="image" rel="icon" href="img/favicon.ico" sizes="16x16">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+</head>
+
+<body class="bg-white ontainer w-100 lg:w-4/5 mx-auto flex flex-col">
+    <nav
+        class="container flex px-10 mb-10 flex-col md:flex-row md:flex-shrink-0 justify-between flex-wrap p-6 tracking-wider relative">
+        <div class="flex flex-col">
+            <a href="index.html" class="ml-24 font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi
+                Gernhardt
+                &nbsp;<div class="animate-pulse"> _</div></a>
+            <p class=" text-turqoise ml-24 ">
+                Web developer, global communicator and activist
+            </p>
+        </div>
+
+        <div class="flex flex-col self-start flex-wrap md:justify-end">
+            <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500">
+                <p onclick="toggleDisplay()"
+                    class="block mt-4 sm:inline-block lg:mt-0 text-teal-200 md:hover:text-turqoise mr-4 cursor-pointer">
+                    Contact
+                </p>
+            </div>
+            <div id="contact-menu" class=" flex flex-col space-y-10">
+                <a href="https://github.com/KumiGhardt"><img src="img/github_icon.svg" alt="github"
+                        class="h-10 w-10 mb-5">
+                </a>
+                <a href="mailto:kumigernhardt@gmail.com"><img src="img/email.svg" alt="mail" class="h-10 w-10 mb-5">
+                </a>
+                <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"><img src="img/linkedin.svg"
+                        alt="linkedin_icon" class="h-10 w-10 mb-5">
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="nav">
+        <div class=" space-y-10 mb-10 px-10 md:px-52">
+            <img class="float-left rounded-full h-48 w-48 mr-40" src="img/kumi_gernhardt.png">
+            <p class="pt-20 px-8 text-base ">With over a 400 hours in coding, I have gained a fluency in Javascript,
+                React, Node.js, Testing, and Angular.
+        </div>
+    </section>
+
+
+    <div class="pt-6 pb-12 m-8">
+        <div id="card" class="">
+            <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
+                <div>
+                    <div>
+                        <h5 class="space-y-10 mb-10 px-10 md:px-52 text-center">Hi! I'm Kumi Gernhardt. </h5>
+                        <p>I am a full-stack web developer with a background in communication, journalism, project
+                            management and customer service looking for the ultimate challenge in web development.
+
+                            With my strong communication background and years of experience dealing with people from all
+                            cultures, I excel in an agile environment where I believe in finding the most efficient and
+                            effective method
+                            of conveying information to and within a development team to get the best results. Take
+                            a look at my projects and some earlier work I did.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- container for all cards -->
+            <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
+                <!-- card -->
+                <div class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/XNY1ElZNmX0?controls=0?&autoplay=1&loop=1&playlist=XNY1ElZNmX0"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Angular Movie Library</h3>
+                        This project is an Angular-built client-side movie library. It is a movie library
+                        that allows users to sign up, see the library of movies along with their
+                        director,
+                        genres and descripts, favorite movies of their choice, edit and delete their
+                        profiles. MyBrary is based on a react project and takes its data from my movie
+                        api
+                        and is another version of the initial react client side app.
+                        </p>
+                        <a href="https://github.com/KumiGhardt/myFlix-Angular-client"
+                            class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/1l_ba-4kH6Q?controls=0?&autoplay=1&loop=1&playlist=1l_ba-4kH6Q"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Chat App</h3>
+                        <p class="mt-2">
+                            My role in this project was to build a native application with Javascript that has
+                            chat functionality, stored in Firestore Database and available offline. A chat
+                            application that can authenticate users, retrieve locally stored messages. Finally
+                            the app had communication features that allowed the sharing of location and images
+                            wither in the media library or from taking pictures with the device camera and
+                            stored in Google Firebase Cloud Storage
+
+                            Technologies used: React Native, Expo, Google Firestore database, Android Studio,
+                            iOS Emulator, GiftChat UI Library
+                        </p>
+                        <a href="https://github.com/KumiGhardt/TalkTime" class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/efSrLXll_ho?controls=0?&autoplay=1&loop=1&playlist=efSrLXll_ho"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Meet App</h3>
+                        <p class="mt-2">
+                            My role in this project was to build a serverless, progressive web application (PWA) with
+                            React
+                            using a test-driven development (TDD) technique, using the Google Calendar API to fetch
+                            upcoming
+                            events. I covered test-driven development & test scenarios, serverless functions (google
+                            calendar
+                            API, AWWS Lambda), unit testing(Jest), integration testing, user acceptance(Jest-Cucumber) &
+                            end-to-end testing(Puppeteer), continuous delivery(atatus),object-oriented programming,
+                            progressive
+                            web applications with offline capability and data visualization(Recharts).
+                        </p>
+                        <a href="https://github.com/KumiGhardt/meet" class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/3VFIBoh-3xk?controls=0?&autoplay=1&loop=1&playlist=3VFIBoh-3xk"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">React Movie Library</h3>
+                        <p class="mt-2">
+                            My role in this project was to use the database I created in my last application, using
+                            Javascript,
+                            to build an interface that I decided to name mybrary. I thus built the frontend of my app
+                            with React
+                            and redux. I learned the power of React Components, I learned that I need to practice how to
+                            write
+                            cleaner code and how React and to an extent redux helps with that. I learned to appreciate
+                            the good
+                            design structure that comes with MVC and how to implement Bootstrap into my project. I also
+                            learned
+                            the importance of a well done server-side and how that helps with routing and so I was very
+                            happy to
+                            be able to apply that to my task here and finally achieve competency in the MERN (MongoDB,
+                            Express,
+                            React, and Node.js) stack.
+                        </p>
+                        <a href="https://github.com/KumiGhardt/mybrary" class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <img class="inset-0 h-full w-full object-cover object-center" src="img/postman.png" />
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Backend Server</h3>
+                        <p class="mt-2">
+                            My role in this project was to come up with a movie index and create a list of users who
+                            could sign
+                            up, login in and pick their favorite movie titles, genre, directors and save them to their
+                            own
+                            lists. The first part was building the server side of the movie index. I decided to pick my
+                            favourite movies as a basis of building the database and then went through the achievement
+                            which
+                            took me through Node.js, Web server frameworks and Express, REST and API endpoints and
+                            testing on
+                            Postman,Relational databases and SQL, Non-Relational databases and Mongo, Mongoose,
+                            Authentication
+                            and Authorisation, Data validation and security.
+
+                            The Server-side Build used Javascript
+                            Framework: Node.Js
+                            Web Server Framework: Express
+                            Database: Mongodb
+                            Object Document Mapper: Mongoose
+                            Middleware Library For Authentication: Passport
+                            Deployment: Mongodb In Atlas
+                            Platform As A Service (Paas): Heroku
+                        </p>
+                        <a href="https://github.com/KumiGhardt/movie-api" class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/uvrzDUQNdiQ?controls=0?&autoplay=1&loop=1&playlist=uvrzDUQNdiQ"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Pokedex- a simple Javascript App</h3>
+                        <p class="mt-2">
+                            My role in this project was to build a Pokedex- a simple JavaScript application that can
+                            communicate
+                            with an external API. This project incorporates DOM interaction, APIs, Complex UIs and
+                            JQuery.Platform As A Service (Paas): GithubPages
+                        </p>
+                        <a href="https://github.com/KumiGhardt/simple-js-app" class="underline text-indigo-700">Github
+                            Repo</a>
+                    </div>
+                </div>
+                <!--/ card-->
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <img class="inset-0 h-full w-full object-cover object-center" src="img/ywca1.png" />
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <h3 class="font-semibold text-lg leading-tight truncate">Professional Background</h3>
+                        <p class="mt-2">
+                            My role in this project was to build a Pokedex- a simple JavaScript application that can
+                            communicate
+                            with an external API. This project incorporates DOM interaction, APIs, Complex UIs and
+                            JQuery.Platform As A Service (Paas): GithubPages
+                        </p>
+                        <a href="background.html" class="underline text-indigo-700">Professional Background</a>
+                    </div>
+                </div>
+            </div>
+            <!--/ flex-->
+        </div>
+
+
+
+        <script src="index.js"></script>
+
+</body>
+
+</html>
