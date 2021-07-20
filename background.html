@@ -49,32 +49,50 @@
             </p>
         </div>
 
-        <!-- card component -->
-        <div class="flex flex-col items-center text-gray-500 text-base font-light">
-            <div
-            class="flex flex-row bg-turqoise-light rounded-lg h-56 w-56 px-3 py-6 mx-8 mb-10 items-center justify-center tracking-wider shadow-2xl hover:bg-gray-lightest">
-            <a href="https://ywcamalawi.com/" target="_blank" class="text-center">Safe Spaces for Women<img src="img/ywca1.png"
-                    alt="YWCA work" class="rounded-full h-42 w-42 flex items-center justify-center"></a>
-        </div>
-            <p>I began working with the Young Women's Christian Association of Malawi as a teen and continued on as
+
+
+
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/ywca1.png" alt="Young Womens Christian Association">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <h3 class="font-semibold text-lg leading-tight truncate">YWCA of Malawi</h3>
+                <p class="mt-2">
+                    I began working with the Young Women's Christian Association (YWCA) of Malawi as a teen and continued on as
                 Communications
                 officer and Project manager, collaboration with the World YWCA to bring much needed assiatnce to women
                 in girls in rural Malawi, Southern African and even on the world Stage in all issues that affect women
-                from literacy, sexual reproductive health and rights to business and spiritual matters.</p>
+                from literacy, sexual reproductive health and rights to business and spiritual matters.
+                <br>
+                <a href="https://ywcamalawi.com/" class="underline text-indigo-700">Safe Spaces for Women</a>
+            </div>
         </div>
 
-        <div class="flex flex-col items-center text-gray-500 text-base font-light">
-            <div
-                class="flex flex-row bg-turqoise-light rounded-lg h-56 w-56 px-3 py-6 mx-8 mb-10 items-center justify-center tracking-wider shadow-2xl hover:bg-gray-lightest">
-                <a href="https://en.reset.org/blog/smart-home-smart-life-07112016?page=9" target="_blank" class="text-center">Smart Home, Smart Life<img src="img/kumi-writing-1.png"
-                    alt="Smart Home" class="rounded-full h-42 w-42 flex items-center justify-center"></a>
+        
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+            <!-- media -->
+            <div class=" w-auto md:w-1/2">
+                <img src="img/kumi-writing-1.png" alt="Young Womens Christian Association">
             </div>
-
-            <p>I worked as a journalist for 5 years for the Malawi Broadcasting Corporation as a Producer, Report and
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <h3 class="font-semibold text-lg leading-tight truncate">Journalism</h3>
+                <p class="mt-2">
+                I worked as a journalist for 5 years for the Malawi Broadcasting Corporation as a Producer, Report and
                 Editor for their Radio, TV and online presences. During my Masters degree studies in Global
                 Communication and International Journalism, I interned at Reset.org and this kick-started my passion for
-                all issues environmental.</p>
+                all issues environmental.</a>
+                <br>
+                <a href="https://en.reset.org/blog/smart-home-smart-life-07112016?page=9" class="underline text-indigo-700">Writing Sample</a>
+            </div>
+
         </div>
+
 
     </div>
 
