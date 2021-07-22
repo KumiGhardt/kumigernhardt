@@ -11,47 +11,50 @@
 
 </head>
 
-<body class="bg-white container w-100 lg:w-4/5 mx-auto flex flex-col">
+<body class="">
     <nav
-        class="flex px-10 mb-10 flex-col md:flex-row md:flex-shrink-0 items-center justify-between flex-wrap p-6 tracking-wider">
-        <div class="flex self-start">
-            <a href="index.html" class="font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi Gernhardt
-                &nbsp;<div class="animate-pulse"> _</div></a>
+    class="container flex px-10 mb-10 flex-col md:flex-row md:flex-shrink-0 justify-between flex-wrap p-6 tracking-wider relative">
+    <div class="flex flex-col">
+        <a href="index.html" class="ml-24 font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi
+            Gernhardt
+            &nbsp;<div class="animate-pulse"> _</div></a>
+        <p class=" text-turqoise ml-24 ">
+            Web developer, global communicator and activist
+        </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row self-start flex-wrap md:justify-end ml-24">
+        <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500 md:px-40">
+            <a href="index.html">Home</a>
         </div>
-
-        <div class="flex flex-col self-start flex-wrap md:justify-end">
-            <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500">
-                <p onclick="toggleDisplay()"
-                    class="block mt-4 sm:inline-block lg:mt-0 text-teal-200 md:hover:text-turqoise mr-4 cursor-pointer">
-                    Contact
-                </p>
-            </div>
-            <div id="contact-menu" class=" flex flex-col space-y-10">
-                <a href="https://github.com/KumiGhardt"><img src="img/github_icon.svg" alt="github"
-                        class="h-10 w-10 mb-5">
-                </a>
-                <a href="mailto:kumigernhardt@gmail.com"><img src="img/email.svg" alt="mail" class="h-10 w-10 mb-5">
-                </a>
-                <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"><img src="img/linkedin.svg"
-                        alt="linkedin_icon" class="h-10 w-10 mb-5">
-                </a>
-            </div>
+        <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500">
+            <a href="index.html#footer">Contact</a>
         </div>
-    </nav>
+        <div id="contact-menu" class=" flex flex-col space-y-10">
+            <a href="https://github.com/KumiGhardt"><img src="img/github_icon.svg" alt="github"
+                    class="h-10 w-10 mb-5">
+            </a>
+            <a href="mailto:kumigernhardt@gmail.com"><img src="img/email.svg" alt="mail" class="h-10 w-10 mb-5">
+            </a>
+            <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"><img src="img/linkedin.svg"
+                    alt="linkedin_icon" class="h-10 w-10 mb-5">
+            </a>
+        </div>
+    </div>
+</nav>
 
 
 
-    <div class="space-y-10 mb-10 px-10 md:px-40">
+    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
         <div class="text-center introduction">
             <p class="ml-6 pt-1 text-gray-500 text-base font-light">
                 I hold two Masters degrees in Communication and Journalism and have expansive Project Management
                 experience at the YWCA of Malawi.
             </p>
         </div>
+    </div>
 
-
-
-
+    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
         <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
         bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
             <!-- media -->
@@ -62,19 +65,21 @@
             <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                 <h3 class="font-semibold text-lg leading-tight truncate">YWCA of Malawi</h3>
                 <p class="mt-2">
-                    I began working with the Young Women's Christian Association (YWCA) of Malawi as a teen and continued on as
-                Communications
-                officer and Project manager, collaboration with the World YWCA to bring much needed assiatnce to women
-                in girls in rural Malawi, Southern African and even on the world Stage in all issues that affect women
-                from literacy, sexual reproductive health and rights to business and spiritual matters.
-                <br>
-                <a href="https://ywcamalawi.com/" class="underline text-indigo-700">Safe Spaces for Women</a>
+                    I began working with the Young Women's Christian Association (YWCA) of Malawi as a teen and
+                    continued on as
+                    Communications
+                    officer and Project manager, collaboration with the World YWCA to bring much needed assiatnce to
+                    women
+                    in girls in rural Malawi, Southern African and even on the world Stage in all issues that affect
+                    women
+                    from literacy, sexual reproductive health and rights to business and spiritual matters.
+                    <br>
+                    <a href="https://ywcamalawi.com/" class="underline text-indigo-700">Safe Spaces for Women</a>
             </div>
         </div>
 
-        
         <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+        bg-white rounded-lg shadow-xl mt-4 w-100 mx-2">
             <!-- media -->
             <div class=" w-auto md:w-1/2">
                 <img src="img/kumi-writing-1.png" alt="Young Womens Christian Association">
@@ -83,20 +88,39 @@
             <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                 <h3 class="font-semibold text-lg leading-tight truncate">Journalism</h3>
                 <p class="mt-2">
-                I worked as a journalist for 5 years for the Malawi Broadcasting Corporation as a Producer, Report and
-                Editor for their Radio, TV and online presences. During my Masters degree studies in Global
-                Communication and International Journalism, I interned at Reset.org and this kick-started my passion for
-                all issues environmental.</a>
-                <br>
-                <a href="https://en.reset.org/blog/smart-home-smart-life-07112016?page=9" class="underline text-indigo-700">Writing Sample</a>
+                    I worked as a journalist for 5 years for the Malawi Broadcasting Corporation as a Producer, Report
+                    and
+                    Editor for their Radio, TV and online presences. During my Masters degree studies in Global
+                    Communication and International Journalism, I interned at Reset.org and this kick-started my passion
+                    for
+                    all issues environmental.</a>
+                    <br>
+                    <a href="https://en.reset.org/blog/smart-home-smart-life-07112016?page=9"
+                        class="underline text-indigo-700">Writing Sample</a>
+                    <br>
+                    <a href="img/Kumi-Gernhardt-Resume.pdf" class="underline text-indigo-700" download>Download my
+                        resume here</a>
             </div>
-
         </div>
-
-
     </div>
-
-    <div id="footer" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
+    <!--/ flex-->
+    <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
+        <p class="space-y-10 mb-10 px-10 md:px-52 text-center ">CONTACT ME</p>
+        <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
+            <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img src="img/email.svg"
+                    alt="mail" class="h-10 w-10 mb-5">
+            </a>
+            <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"
+                class="md:mx-2 md:inline leading-7"><img src="img/linkedin.svg" alt="linkedin_icon"
+                    class="h-10 w-10 mb-5">
+            </a>
+            <a href="https://www.github.com/kumighardt/" target="_blank" class="md:mx-2 md:inline leading-7"><img
+                    src="img/github_icon.svg" alt="github_icon" class="h-10 w-10 mb-5">
+            </a>
+        </div>
+    </footer>
+    </div>
+    <div id="icons" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
         <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>

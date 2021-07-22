@@ -13,24 +13,24 @@
 
 </head>
 
-<body class="g">
+<body class="">
     <nav
-        class="container flex px-10 mb-10 flex-col md:flex-row md:flex-shrink-0 justify-between flex-wrap p-6 tracking-wider relative">
+        class="container flex mb-10 flex-col md:flex-row md:flex-shrink-0 justify-between flex-wrap p-6 tracking-wider relative">
         <div class="flex flex-col">
-            <a href="index.html" class="ml-24 font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi
+            <a href="index.html" class="md:ml-24 font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi
                 Gernhardt
                 &nbsp;<div class="animate-pulse"> _</div></a>
-            <p class=" text-turqoise ml-24 ">
+            <p class=" text-turqoise md:ml-24 ">
                 Web developer, global communicator and activist
             </p>
         </div>
 
-        <div class="flex flex-col self-start flex-wrap md:justify-end">
+        <div class="flex flex-col md:flex-row self-start flex-wrap md:justify-end md:ml-24">
+            <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500 md:px-40">
+                <a href="background.html">Work</a>
+            </div>
             <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500">
-                <p onclick="toggleDisplay()"
-                    class="block mt-4 sm:inline-block lg:mt-0 text-teal-200 md:hover:text-turqoise mr-4 cursor-pointer">
-                    Contact
-                </p>
+                <a href="index.html#footer">Contact</a>
             </div>
             <div id="contact-menu" class=" flex flex-col space-y-10">
                 <a href="https://github.com/KumiGhardt"><img src="img/github_icon.svg" alt="github"
@@ -42,28 +42,22 @@
                         alt="linkedin_icon" class="h-10 w-10 mb-5">
                 </a>
             </div>
-
         </div>
-
     </nav>
 
-
-
-    <section class="nav">
-        <div class=" space-y-10 mb-10 px-10 md:px-52">
-            <img class="float-left rounded-full h-48 w-48 mr-40" src="img/kumi_gernhardt.png">
-            <p class="pt-20 px-8 text-base ">With over a 400 hours in coding, I have gained a fluency in Javascript,
-                React, Node.js, Testing, and Angular.
-        </div>
-    </section>
-
+    <div class="container w-100 lg:w-4/5 mx-auto flex-col md:flex-row m-12">
+        <img class="float-left rounded-full h-32 mr-32 lg:h-52 lg:w-52 md:items-center md:justify-center"
+            src="img/kumi_gernhardt.png">
+        <p class="pt-20 px-8 text-base ">With over a 400 hours in coding, I have gained a fluency in Javascript,
+            React, Node.js, Testing, and Angular.
+    </div>
 
     <div class="pt-6 pb-12 m-8">
         <div id="card" class="">
             <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
                 <div>
                     <div>
-                        <h5 class="space-y-10 mb-10 px-10 md:px-52 text-center">Hi! I'm Kumi Gernhardt. </h5>
+                        <h5 class="space-y-10 mb-10 px-10 md:px-52 text-center text-3xl">Hi, I'm Kumi Gernhardt. </h5>
                         <p>I am a full-stack web developer with a background in communication, journalism, project
                             management and customer service looking for the ultimate challenge in web development.
 
@@ -95,6 +89,9 @@
                         profiles. MyBrary is based on a react project and takes its data from my movie
                         api
                         and is another version of the initial react client side app.
+                        <br>
+                        <span style="font-weight:bold">Technologies used:</span>
+                        Angular, Node.js, Typedoc, JSDoc
                         </p>
                         <a href="https://github.com/KumiGhardt/myFlix-Angular-client"
                             class="underline text-indigo-700">Github
@@ -104,7 +101,7 @@
 
                     </div>
                 </div>
-                
+
                 <!--/ card-->
                 <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
                                               bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
@@ -155,7 +152,11 @@
                             end-to-end testing(Puppeteer), continuous delivery(atatus),object-oriented programming,
                             progressive
                             web applications with offline capability and data visualization(Recharts).
+                            <br>
+                            <span style="font-weight:bold">Technologies used:</span>
+                            React, AWS lambda, Google Calendar API, OAuth2 authentication.
                         </p>
+
                         <a href="https://github.com/KumiGhardt/meet" class="underline text-indigo-700">Github
                             Repo</a>
                         <a href="https://kumighardt.github.io/meet/" class="underline text-indigo-700">Meet App</a>
@@ -188,6 +189,9 @@
                             be able to apply that to my task here and finally achieve competency in the MERN (MongoDB,
                             Express,
                             React, and Node.js) stack.
+                            <br>
+                            <span style="font-weight:bold">Technologies used:</span>
+                            React, React redux, Bootstrap
                         </p>
                         <a href="https://github.com/KumiGhardt/mybrary" class="underline text-indigo-700">Github
                             Repo</a>
@@ -251,6 +255,9 @@
                             JQuery.
                             <br>
                             Platform As A Service (Paas): GithubPages
+                            <br>
+                            <span style="font-weight:bold">Technologies used:</span>
+                            Javascript, JQuery, Bootstrap
                         </p>
                         <a href="https://github.com/KumiGhardt/simple-js-app" class="underline text-indigo-700">Github
                             Repo</a>
@@ -258,30 +265,30 @@
                             class="underline text-indigo-700">Pokedex</a>
                     </div>
                 </div>
-                <!--/ card-->
-                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
-                    <!-- media -->
-                    <div class="h-64 w-auto md:w-1/2">
-                        <img class="inset-0 h-full w-full object-cover object-center" src="img/ywca1.png" />
-                    </div>
-                    <!-- content -->
-                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                        <h3 class="font-semibold text-lg leading-tight truncate">Professional Background</h3>
-                        <p class="mt-2">
-                            My role in this project was to build a Pokedex- a simple JavaScript application that can
-                            communicate
-                            with an external API. This project incorporates DOM interaction, APIs, Complex UIs and
-                            JQuery.Platform As A Service (Paas): GithubPages
-                        </p>
-                        <a href="background.html" class="underline text-indigo-700">Professional Background</a>
-                    </div>
-                </div>
+
             </div>
             <!--/ flex-->
+            <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
+                <p class="space-y-10 mb-10 px-10 md:px-52 text-center ">CONTACT ME</p>
+                <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
+                    <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img
+                            src="img/email.svg" alt="mail" class="h-10 w-10 mb-5">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"
+                        class="md:mx-2 md:inline leading-7"><img src="img/linkedin.svg" alt="linkedin_icon"
+                            class="h-10 w-10 mb-5">
+                    </a>
+                    <a href="https://www.github.com/kumighardt/" target="_blank"
+                        class="md:mx-2 md:inline leading-7"><img src="img/github_icon.svg" alt="github_icon"
+                            class="h-10 w-10 mb-5">
+                    </a>
+                </div>
+            </footer>
         </div>
-
-
+        <div id="icons" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
 
         <script src="index.js"></script>
 
