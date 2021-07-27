@@ -35,65 +35,122 @@
 
 
 
-    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
-        <div class="text-center introduction">
-            <p class="ml-6 pt-1 text-gray-500 text-base font-light">
-                I hold two Masters degrees in Communication and Journalism and have expansive Project Management
-                experience at the YWCA of Malawi.
-            </p>
+    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12 ">
+        <div class="introduction ml-6 pt-1 text-gray-800 font-medium text-justify">
+            <p>
+                I am a communications and journalism expert with experience in project management, customer analysis and
+                most recently,
+                full-stack development living in Berlin. I offer exceptional communication skills, a hands-on real world
+                experience of work on a global scale with people from all over the world
+                and a thirst for knowledge and improvement. </p>
         </div>
     </div>
 
     <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
+
         <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+        bg-white rounded-lg shadow-xl  mt-11 w-100 mx-2 ">
             <!-- media -->
             <div class="w-auto md:w-1/2">
-                <img src="img/ywca1.png" alt="Young Womens Christian Association">
+                <img src="img/kumi_gernhardt profile.png" alt="Kumi_Gernhardt_profile">
             </div>
             <!-- content -->
             <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                <h3 class="font-semibold text-lg leading-tight truncate">YWCA of Malawi</h3>
+                <a class="font-semibold text-lg leading-tight truncate text-turqoise"
+                    href="img/Kumi-Gernhardt-Resume.pdf">About Me</a>
+                <p class="mt-2">
+                    I am a full stack web developer with a strong communications and journalism background, experience
+                    in project management and customer analysis that has instilled the skills of troubleshooting and
+                    quck thinking.</p>
+                <p>Having lived in Africa, Russia and Germany, I offer exceptional
+                    communication skills, a hands-on real world experience of work on a global scale with people from
+                    all over the world and a thirst for knowledge and improvement. I want to take my broad experience
+                    and work in an environment where I am free to be productive and creative and cater to a glolal audience.
+                </p>
+                <p class="font-bold">My techstack includes JavaScript, React, Angular, Typescript, Node.js, Express, MongoDB, Mongoose, CSS and HTML.</p>
+            </div>
+        </div>
+
+
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/ywcamw.png" alt="Young Womens Christian Association">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <a class="font-semibold text-lg leading-tight truncate text-turqoise"
+                    href="https://ywcamalawi.com/">YWCA of Malawi</a>
                 <p class="mt-2">
                     I began working with the Young Women's Christian Association (YWCA) of Malawi as a teen and
                     continued on as
                     Communications
                     officer and Project manager, collaboration with the World YWCA to bring much needed assiatnce to
                     women
-                    in girls in rural Malawi, Southern African and even on the world Stage in all issues that affect
+                    in girls in rural Malawi, Southern African and even on the world stage in all issues that affect
                     women
-                    from literacy, sexual reproductive health and rights to business and spiritual matters.
+                    from literacy, sexual reproductive health and rights to business and spiritual matters. In this
+                    position, I achieved the following:
                     <br>
-                    <a href="https://ywcamalawi.com/" class="underline text-indigo-700">Safe Spaces for Women</a>
+                    <ul class="list-disc px-5">
+                        <li>Lobbied for funding for programs for the local young women in the 4 YWCA Malawi branches
+                            resulting in increased youth participation in economic and educational programs.</li>
+                        <li>Managed projects that worked with women and girls at the grassroots that resulted in the
+                            expansion of access to evidence-based comprehensive sexuality and reproductive health
+                            education and service referrals among young people.</li>
+                        <li>Attended International conferences in Mexico and Austria to raise awareness about Malawian
+                            issues that resulted in increased funding. Streamlined communication between the main YWCA
+                            Malawi office and its branches.</li>
+                        <li>Conceived the online presence both on Facebook and the YWCA Mw website to bring a global
+                            awareness of the work of YWCA Malawi.</li>
+                        <li>Established affiliations with organisations such as
+                            Girls not Brides, World YWCA and other domestic organisations to share resources and key
+                            findings in research.</li>
+                    </ul>
             </div>
         </div>
 
         <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-        bg-white rounded-lg shadow-xl mt-4 w-100 mx-2">
+        bg-white rounded-lg shadow-xl mt-12  w-100 mx-2">
             <!-- media -->
             <div class=" w-auto md:w-1/2">
-                <img src="img/kumi-writing-1.png" alt="Young Womens Christian Association">
+                <img src="img/kumi-writing-3.png" alt="smart-home-article">
             </div>
             <!-- content -->
             <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                 <h3 class="font-semibold text-lg leading-tight truncate">Journalism</h3>
                 <p class="mt-2">
                     I worked as a journalist for 5 years for the Malawi Broadcasting Corporation as a Producer, Report
-                    and
-                    Editor for their Radio, TV and online presences. During my Masters degree studies in Global
-                    Communication and International Journalism, I interned at Reset.org and this kick-started my passion
-                    for
-                    all issues environmental.</a>
+                    and Editor for their Radio, TV and online presences during which I:
+                    <ul class="list-disc px-5">
+                        <li>Oversaw the production of the main news broadcast in TV and Radio resulting in a smooth news
+                            broadcast news and the rearrangement of new items should breaking news be needed to be given
+                            priority for the benefit of the viewer and the news anchor.</li>
+                        <li>Conducted the editing of new scripts and other news-based programs to ensure news items were
+                            factual and grammatical.</li>
+                        <li>Reported for the public broadcaster with emphasis on political and women's rights issues to
+                            bring greater awareness to the public. Accomplished the implementation of the launch of the
+                            MBC online publication and introduced BBC news reporting techniques</li>
+                    </ul>
+
+                    During my Masters degree studies in Global
+                    Communication and International Journalism, I interned at Reset.org writing blogs
+                    with an emphasis on smart approaches to sustainability resulting in an output of two blog posts a
+                    week</a>
                     <br>
-                    <a href="img/Kumi-Gernhardt-Resume.pdf" class="underline text-indigo-700" download>Download my
-                        resume here</a>
             </div>
         </div>
     </div>
     <!--/ flex-->
     <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
-        <p class="space-y-10 mb-10 px-10 md:px-52 text-center ">CONTACT ME</p>
+
+        <p class="space-y-10 mb-10 px-10 md:px-52 text-center">CONTACT ME</p>
         <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
+
+            <a href="img/Kumi-Gernhardt-Resume.pdf" target="_blank" class="md:mx-2 md:inline leading-7"><img
+                src="img/resume.svg" alt="resume_icon" class="h-10 w-10 mb-5">
+        </a>
             <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img src="img/email.svg"
                     alt="mail" class="h-10 w-10 mb-5">
             </a>

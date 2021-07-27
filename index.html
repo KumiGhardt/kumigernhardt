@@ -164,10 +164,11 @@
 
     <div class="pt-6 pb-12 m-8">
         <div id="card" class="">
-            <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
+            <div class="cw-100 lg:w-4/5 mx-auto flex flex-col m-32">
                 <div>
                     <div>
-                        <h5 class="space-y-10 mb-10 px-10 md:px-52 text-center text-3xl">Hi, I'm Kumi Gernhardt. </h5>
+                        <h5 class="sw-100 lg:w-4/5 mx-auto flex flex-col m-12 text-center text-3xl">Hi, I'm Kumi
+                            Gernhardt. </h5>
                         <p>I am a full-stack web developer with a background in communication, journalism, project
                             management and customer service looking for the ultimate challenge in web development.
 
@@ -181,9 +182,51 @@
             </div>
             <!-- container for all cards -->
             <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
+
+                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+                bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                    <!-- media -->
+                    <div class="h-64 w-auto md:w-1/2">
+                        <iframe class="inset-0 h-full w-full object-cover object-center"
+                            src="https://www.youtube.com/embed/3VFIBoh-3xk?controls=0?&autoplay=1&loop=1&playlist=3VFIBoh-3xk"></iframe>
+                    </div>
+                    <!-- content -->
+                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                        <a href="casestudy.html"
+                            class="font-semibold text-lg leading-tight truncate text-turqoise" id="btn" aria-describedby="tooltip">React Movie Library</a>
+                            <div class="text-gray-400 ml-2 mr-96 px-4 py-1 rounded bg-opacity-50 shadow-xl hidden" id="tooltip" role="tooltip">
+                                case study
+                            </div>
+                        <p class="mt-2">
+                            My role in this project was to use the database I built to construct a client side movie
+                            library that I decided to name mybrary. I thus built the frontend of my app
+                            with React
+                            and redux. I learned the power of React Components, I learned that I need to practice how to
+                            write
+                            cleaner code and how React and to an extent redux helps with that. I learned to appreciate
+                            the good
+                            design structure that comes with MVC and how to implement Bootstrap into my project. I also
+                            learned
+                            the importance of a well done server-side and how that helps with routing and so I was very
+                            happy to
+                            be able to apply that to my task here and finally achieve competency in the MERN (MongoDB,
+                            Express,
+                            React, and Node.js) stack.
+                            <br>
+                            <span style="font-weight:bold">Technologies used:</span>
+                            React, React redux, Bootstrap
+                        </p>
+                        <a href="https://github.com/KumiGhardt/mybrary" class="underline text-turqoise">Github
+                            Repo</a>
+                        <a href="https://hardty-films.netlify.app/" class="underline text-turqoise">React Mybrary</a>
+
+                    </div>
+                </div>
+                <!--/ card-->
+
                 <!-- card -->
                 <div class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                                              bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
                     <!-- media -->
                     <div class="h-64 w-auto md:w-1/2">
                         <iframe class="inset-0 h-full w-full object-cover object-center"
@@ -204,17 +247,17 @@
                         Angular, Node.js, Typedoc, JSDoc
                         </p>
                         <a href="https://github.com/KumiGhardt/myFlix-Angular-client"
-                            class="underline text-indigo-700">Github
+                            class="underline text-turqoise">Github
                             Repo</a>
                         <a href="https://kumighardt.github.io/myFlix-Angular-client/welcome"
-                            class="underline text-indigo-700">Angular Mybrary</a>
+                            class="underline text-turqoise">Angular Mybrary</a>
 
                     </div>
                 </div>
 
                 <!--/ card-->
                 <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                                              bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
                     <!-- media -->
                     <div class="h-64 w-auto md:w-1/2">
                         <iframe class="inset-0 h-full w-full object-cover object-center"
@@ -235,14 +278,14 @@
                             Firestore database, Android Studio,
                             iOS Emulator, GiftChat UI Library
                         </p>
-                        <a href="https://github.com/KumiGhardt/TalkTime" class="underline text-indigo-700">Github
+                        <a href="https://github.com/KumiGhardt/TalkTime" class="underline text-turqoise">Github
                             Repo</a>
                     </div>
                 </div>
 
                 <!--/ card-->
                 <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                                              bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
                     <!-- media -->
                     <div class="h-64 w-auto md:w-1/2">
                         <iframe class="inset-0 h-full w-full object-cover object-center"
@@ -267,57 +310,22 @@
                             React, AWS lambda, Google Calendar API, OAuth2 authentication.
                         </p>
 
-                        <a href="https://github.com/KumiGhardt/meet" class="underline text-indigo-700">Github
+                        <a href="https://github.com/KumiGhardt/meet" class="underline text-turqoise">Github
                             Repo</a>
-                        <a href="https://kumighardt.github.io/meet/" class="underline text-indigo-700">Meet App</a>
+                        <a href="https://kumighardt.github.io/meet/" class="underline text-turqoise">Meet App</a>
                     </div>
                 </div>
                 <!--/ card-->
+
                 <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
-                    <!-- media -->
-                    <div class="h-64 w-auto md:w-1/2">
-                        <iframe class="inset-0 h-full w-full object-cover object-center"
-                            src="https://www.youtube.com/embed/3VFIBoh-3xk?controls=0?&autoplay=1&loop=1&playlist=3VFIBoh-3xk"></iframe>
-                    </div>
-                    <!-- content -->
-                    <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                        <h3 class="font-semibold text-lg leading-tight truncate">React Movie Library</h3>
-                        <p class="mt-2">
-                            My role in this project was to use the database I created in my last application, using
-                            Javascript,
-                            to build an interface that I decided to name mybrary. I thus built the frontend of my app
-                            with React
-                            and redux. I learned the power of React Components, I learned that I need to practice how to
-                            write
-                            cleaner code and how React and to an extent redux helps with that. I learned to appreciate
-                            the good
-                            design structure that comes with MVC and how to implement Bootstrap into my project. I also
-                            learned
-                            the importance of a well done server-side and how that helps with routing and so I was very
-                            happy to
-                            be able to apply that to my task here and finally achieve competency in the MERN (MongoDB,
-                            Express,
-                            React, and Node.js) stack.
-                            <br>
-                            <span style="font-weight:bold">Technologies used:</span>
-                            React, React redux, Bootstrap
-                        </p>
-                        <a href="https://github.com/KumiGhardt/mybrary" class="underline text-indigo-700">Github
-                            Repo</a>
-                        <a href="https://hardty-films.netlify.app/" class="underline text-indigo-700">React Mybrary</a>
-                    </div>
-                </div>
-                <!--/ card-->
-                <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                                              bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
                     <!-- media -->
                     <div class="h-64 w-auto md:w-1/2">
                         <img class="inset-0 h-full w-full object-cover object-center" src="img/postman.png" />
                     </div>
                     <!-- content -->
                     <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                        <h3 class="font-semibold text-lg leading-tight truncate">Backend Server</h3>
+                        <h3 class="font-semibold text-lg leading-tight truncate">Movie Backend Server</h3>
                         <p class="mt-2">
                             My role in this project was to come up with a movie index and create a list of users who
                             could sign
@@ -328,17 +336,18 @@
                             full-stack developer
                             <br>
                             <span style="font-weight:bold">Technologies used: </span>Node.js and Express, APIs, MongoDB
-                            (explored relational with PostgreSQL and non relational), Mongoose, Postman, JWT authentication, data
+                            (explored relational with PostgreSQL and non relational), Mongoose, Postman, JWT
+                            authentication, data
                             validation logic and security controls, Heroku.
 
                         </p>
-                        <a href="https://github.com/KumiGhardt/movie-api" class="underline text-indigo-700">Github
+                        <a href="https://github.com/KumiGhardt/movie-api" class="underline text-turqoise">Github
                             Repo</a>
                     </div>
                 </div>
                 <!--/ card-->
                 <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
-                                              bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                                              bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
                     <!-- media -->
                     <div class="h-64 w-auto md:w-1/2">
                         <iframe class="inset-0 h-full w-full object-cover object-center"
@@ -358,36 +367,40 @@
                             <span style="font-weight:bold">Technologies used:</span>
                             Javascript, JQuery, Bootstrap
                         </p>
-                        <a href="https://github.com/KumiGhardt/simple-js-app" class="underline text-indigo-700">Github
+                        <a href="https://github.com/KumiGhardt/simple-js-app" class="underline text-turqoise">Github
                             Repo</a>
                         <a href=" https://kumighardt.github.io/simple-js-app/"
-                            class="underline text-indigo-700">Pokedex</a>
+                            class="underline text-turqoise">Pokedex</a>
                     </div>
                 </div>
 
             </div>
-            <!--/ flex-->
-            <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
-                <p class="space-y-10 mb-10 px-10 md:px-52 text-center ">CONTACT ME</p>
-                <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
-                    <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img
-                            src="img/email.svg" alt="mail" class="h-10 w-10 mb-5">
-                    </a>
-                    <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"
-                        class="md:mx-2 md:inline leading-7"><img src="img/linkedin.svg" alt="linkedin_icon"
-                            class="h-10 w-10 mb-5">
-                    </a>
-                    <a href="https://www.github.com/kumighardt/" target="_blank"
-                        class="md:mx-2 md:inline leading-7"><img src="img/github_icon.svg" alt="github_icon"
-                            class="h-10 w-10 mb-5">
-                    </a>
-                </div>
-            </footer>
-        </div>
-        <div id="icons" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
-            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
-                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        </div>
+   <!--/ flex-->
+   <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
+
+    <p class="space-y-10 mb-10 px-10 md:px-52 text-center">CONTACT ME</p>
+    <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
+
+        <a href="img/Kumi-Gernhardt-Resume.pdf" target="_blank" class="md:mx-2 md:inline leading-7"><img
+            src="img/resume.svg" alt="resume_icon" class="h-10 w-10 mb-5">
+    </a>
+        <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img src="img/email.svg"
+                alt="mail" class="h-10 w-10 mb-5">
+        </a>
+        <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"
+            class="md:mx-2 md:inline leading-7"><img src="img/linkedin.svg" alt="linkedin_icon"
+                class="h-10 w-10 mb-5">
+        </a>
+        <a href="https://www.github.com/kumighardt/" target="_blank" class="md:mx-2 md:inline leading-7"><img
+                src="img/github_icon.svg" alt="github_icon" class="h-10 w-10 mb-5">
+        </a>
+    </div>
+</footer>
+</div>
+<div id="icons" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div>
 </body>
 
 </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumi Gernhardt</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+</head>
+
+<body class="">
+    <nav
+        class="container flex mb-10 flex-col md:flex-row md:flex-shrink-0 justify-between flex-wrap w-100 lg:w-4/5 tracking-wider relative">
+        <div class="flex flex-col pt-3">
+            <a href="index.html" class="font-bold text-3xl tracking-wider inline-flex text-turqoise">Kumi
+                Gernhardt
+                &nbsp;<div class="animate-pulse"> _</div></a>
+            <p class=" text-turqoise">
+                Web developer, global communicator and activist
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row self-start flex-wrap md:justify-end md:ml-24 pt-8">
+            <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500 md:px-40">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="lg:inline-flex lg-flex-row lg-ml-auto text-gray-500">
+                <a href="index.html#footer">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
+        <div class="text-center introduction">
+            <p class="font-semibold text-lg leading-tight truncate text-gray-800 ">Mybrary Case Study</p>
+        </div>
+    </div>
+
+    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col m-12">
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-4 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/mybrary1.png" alt="react_movie_view">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <p class="mt-2">Mybrary is a React web app developed using the MERN stack, that provides users with
+                    access to information about movies, directors, and genres. Users are able to create an account,
+                    update their personal data, and create a list of favorite movies. Mybrary was a personal project I
+                    built as part of my web development course at CareerFoundry as a demonstration of my understanding
+                    of the React framework.
+                </p>
+            </div>
+        </div>
+
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl mt-12 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/mybrary2.png" alt="one_movie_view">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <p class="mt-2">The aim of the project was to build a client-side application based on its existing
+                    server-side code (REST API and database). I had previously created a RESTful API using Node.js and
+                    Express, that interacts with a non-relational database (MongoDB). The API can be accessed via
+                    commonly used HTTP methods and CRUD methods are used to get access to the data.
+
+                    I started to build the interface users would need when making requests to, and receiving responses
+                    from, the server-side. It is a single-page, responsive application, developed with React and
+                    React-Redux.
+                </p>
+            </div>
+        </div>
+
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/mybrary4.png" alt="director_view">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <p class="mt-2 font-semibold">The technical requirements for this project were:
+                    <ul>
+                        <li>The application must be a
+                            single-page application (SPA)</li>
+                        <li>The application must use state routing to navigate between views and
+                            share URLs</li>
+                        <li>The application must give users the option to filter movies</li>
+                        <li>The application must give
+                            users the option to sort movies</li>
+                        <li>The application must initially use Parcel as its build tool</li>
+                        <li>The
+                            application must be written using the React library and in ES2015+</li>
+                        <li>The application must be written
+                            with React Redux (hence respecting the Flux pattern)</li>
+                        <li>The application must use Bootstrap as a UI
+                            library for styling and responsiveness</li>
+                        <li>The application must contain a mix of class components and
+                            function components</li>
+                        <li>The application may be hosted online</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div v-for="card in cards" class="flex flex-col md:flex-row overflow-hidden
+        bg-white rounded-lg shadow-xl  mt-12 w-100 mx-2">
+            <!-- media -->
+            <div class="w-auto md:w-1/2">
+                <img src="img/mybrary3.png" alt="director_view">
+            </div>
+            <!-- content -->
+            <div class="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
+                <p class="mt-2">This was my most challenging project. React challenged my knowledge of the concepts of
+                    Javascript and I was intrigued by the idea of building complex UIs from components. It however was
+                    quite challenging for a time for me to get. In fact the first attempt at mybrary I imagine looks
+                    like a badly constructed lego car next to the porsche equivalent of what can be built by React. I
+                    solved these challenges by learning the importance of reading the documentation, learning how to use
+                    console.log and learning when to ask for help from more experienced developers and my peers.
+                    It took me a full month to fully complete the project but the interesting thing is once I learned
+                    how to learn this, doing the same project in Angular was so much easier!
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!--/ flex-->
+    <footer id="footer" class="pt-4 flex-col md:items-center md:justify-center mt-4 w-100 mx-2">
+
+        <p class="space-y-10 mb-10 px-10 md:px-52 text-center">CONTACT ME</p>
+        <div class="flex justify-between pace-y-10 mb-10 px-10 md:px-52">
+
+            <a href="img/Kumi-Gernhardt-Resume.pdf" target="_blank" class="md:mx-2 md:inline leading-7"><img
+                src="img/resume.svg" alt="resume_icon" class="h-10 w-10 mb-5">
+        </a>
+            <a href="mailto:kumigernhardt@gmail.com" class="md:mx-2 md:inline leading-7"><img src="img/email.svg"
+                    alt="mail" class="h-10 w-10 mb-5">
+            </a>
+            <a href="https://www.linkedin.com/in/kumigernhardt/" target="_blank"
+                class="md:mx-2 md:inline leading-7"><img src="img/linkedin.svg" alt="linkedin_icon"
+                    class="h-10 w-10 mb-5">
+            </a>
+            <a href="https://www.github.com/kumighardt/" target="_blank" class="md:mx-2 md:inline leading-7"><img
+                    src="img/github_icon.svg" alt="github_icon" class="h-10 w-10 mb-5">
+            </a>
+        </div>
+    </footer>
+    </div>
+    <div id="icons" class="flex px-40 mb-10 flex-row justify-between pt-1 text-gray-300 text-base font-light">
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+</body>
+
+</html>
