@@ -30,8 +30,8 @@ module.exports = {
         current: "currentColor",
 
         turqoise: {
-          light: "#98d7d8",
-          DEFAULT: "#245F60",
+          light: "#1B565A",
+          DEFAULT: "#1C5A5E",
           dark: "#2d9da0",
         },
         grey: {
