@@ -19,8 +19,7 @@ Hi! I'm Kumi! I am a web developer, project manager and global communicator. Wit
 
 # Projects
 
-```
-*A React Movie Library
+* A React Movie Library
 * An Angular movie library
 * A Chat App
 * A Meet App
@@ -28,7 +27,6 @@ Hi! I'm Kumi! I am a web developer, project manager and global communicator. Wit
 * A Pokedex in Javascript
 * My website in Tailwind
 
-```
 
 
 # Website
