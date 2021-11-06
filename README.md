@@ -20,13 +20,13 @@ Hi! I'm Kumi! I am a web developer, project manager and global communicator. Wit
 # Projects
 
 ```
-- A React Movie Library
-- An Angular movie library
-- A Chat App
-- A Meet App
-- A movie backend server ( Node.js and Express)
-- A Pokedex in Javascript
-- My website in Tailwind
+* A React Movie Library
+* An Angular movie library
+* A Chat App
+* A Meet App
+* A movie backend server ( Node.js and Express)
+* A Pokedex in Javascript
+* My website in Tailwind
 
 ```
 
